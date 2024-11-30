@@ -1,0 +1,969 @@
+@import url(./header.css);
+@import url(./main.css);
+/* @import url(./animation.css); */
+@import url(./footer.css);
+
+body {
+    width: 100vw;
+}
+
+main {
+    width: 100%;
+}
+
+main .sect {
+    padding: 0px 45px;
+}
+
+main .sect_1 {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    height: 130vh;
+    width: 100%;
+    background-color: #300A44; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    color: white;
+    gap: 30px;
+}
+
+main .sect_1 .clip {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.youtube.com/vi/QtN10Eb3U0o/maxresdefault.jpg?h=503&fm=webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+}
+
+main .sect_1 .clip::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #24102f42;
+    filter: contrast(100%);
+}
+
+main .sect_1 .clip button {
+    position: absolute;
+    top: 43%;
+    left: 36%;
+    z-index: 2;
+}
+
+main .sect_1 article {
+    width: 70%;
+
+}
+
+main .sect_2 {
+    width: 100vw;
+    height: 95vh;
+    background-color: #FF5438;
+    color: white;
+}
+
+main .sect_2 article {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding: 55px;
+    display: block;
+}
+
+main .sect_2 article p {
+    text-align: left;
+}
+
+main .sect_3 {
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.701);
+}
+
+main .sect_3 .about_us {
+    width: 75%;
+    margin: auto;
+    padding: 80px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 200px;
+} 
+
+main .sect_3 .about_us h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main .sect_3 .about_us p {
+    font-size: 17px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+main .sect_3 .about_us #blue {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4716ED;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main .sect_4 {
+    width: 100%;
+    height: 105vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #4716ED;
+}
+
+main .sect_4 .who {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main .sect_4 .rhsb {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+main .sect_4 .rhsb h3 {
+    font-size: 35px;
+    font-weight: 100;
+}
+
+main .sect_5 {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    color: black;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+main .sect_5 h3 {
+    font-size: 30px;
+    font-weight: light;
+    margin-bottom: 30px;
+
+}
+main .sect_5 section {
+    display: flex;
+    flex-direction: row;
+    gap: 245px;
+}
+
+main .sect_5 h2 {
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+main .sect_6 {
+    width: 100%;
+    height: 130vh;
+    background-image: url('../images/about_people_banner.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .sect_6 .content {
+    position: relative;
+    height: 330px;
+    width: 48%;
+    top: 180px;
+    left: 600px;
+    color: white;
+    display: block;
+}
+
+main .sect_7 {
+    height: 1692px;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 141px 141px 141px 141px 141px 141px 141px 141px 141px ;
+    background-color: grey;
+    /* gap: 1px; */
+}
+
+main .sect_7 .exec {
+    background-image: url('../images/executives/adam_r1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+
+main .sect_7 .exec:hover {
+    transform: scale(1.05);
+}
+
+main .sect_7 .exec::before {
+    content: '';
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.701);
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+main .sect_7 .exec:hover::before {
+    content: 'Adam Grif';
+    top: 79%;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+
+
+main .sect_7 .exec1 {
+    background-image: url('../images/executives/adam_r1.webp');
+}
+main .sect_7 .exec:nth-child(1):hover::before {
+    content: 'Adam Griffith';
+}
+
+main .sect_7 .exec:nth-child(2) {
+    background-image: url('../images/executives/Adi_r1.webp');
+}
+main .sect_7 .exec:nth-child(2):hover::before {
+    content: 'Adi Selva';
+}
+
+main .sect_7 .exec:nth-child(3) {
+    background-image: url('../images/executives/Alistair_r1.webp');
+}
+main .sect_7 .exec:nth-child(3):hover::before {
+    content: 'Alstair Andrews';
+}
+
+main .sect_7 .exec:nth-child(4) {
+    background-image: url('../images/executives/Alief_r1.webp');
+}
+main .sect_7 .exec:nth-child(4):hover::before {
+    content: 'Alief Mumtaz';
+}
+
+main .sect_7 .exec:nth-child(5) {
+    background-image: url('../images/executives/Allen_r1.webp');
+}
+main .sect_7 .exec:nth-child(5):hover::before {
+    content: 'Allen Chen';
+}
+
+main .sect_7 .exec:nth-child(6) {
+    background-image: url('../images/executives/Amelia_r1.webp');
+}
+main .sect_7 .exec:nth-child(6):hover::before {
+    content: 'Amelia Davis';
+}
+
+main .sect_7 .exec:nth-child(7) {
+    background-image: url('../images/executives/Andik_r1.webp');
+}
+main .sect_7 .exec:nth-child(7):hover::before {
+    content: 'Andik Subiantoro';
+}
+
+main .sect_7 .exec:nth-child(8) {
+    background-image: url('../images/executives/AndrewK_r1.webp');
+}
+main .sect_7 .exec:nth-child(8):hover::before {
+    content: 'Andrew Korecki';
+}
+
+main .sect_7 .exec:nth-child(9) {
+    background-image: url('../images/executives/AndrewL_r1.webp');
+}
+main .sect_7 .exec:nth-child(9):hover::before {
+    content: 'Andrew Lismanto';
+}
+
+
+
+
+main .sect_7 .exec:nth-child(10) {
+    background-image: url('../images/executives/Raddo_r2.webp');
+}
+main .sect_7 .exec:nth-child(10):hover::before {
+    content: 'Andrew Radburnd';
+}
+
+main .sect_7 .exec:nth-child(11) {
+    background-image: url('../images/executives/Andy_r2.webp');
+}
+main .sect_7 .exec:nth-child(11):hover::before {
+    content: 'Andy Thompson';
+}
+
+main .sect_7 .exec:nth-child(12) {
+    background-image: url('../images/executives/Anna_r2.webp');
+}
+main .sect_7 .exec:nth-child(12):hover::before {
+    content: 'Anna Potter';
+}
+
+main .sect_7 .exec:nth-child(13) {
+    background-image: url('../images/executives/Anne-Marie_r2.webp');
+}
+main .sect_7 .exec:nth-child(13):hover::before {
+    content: 'Anne-Marie Baker';
+}
+
+main .sect_7 .exec:nth-child(14) {
+    background-image: url('../images/executives/Ardhana_r2.webp');
+}
+main .sect_7 .exec:nth-child(14):hover::before {
+    content: 'Ardhana Praharsana';
+}
+
+main .sect_7 .exec:nth-child(15) {
+    background-image: url('../images/executives/Artha_r2.webp');
+}
+main .sect_7 .exec:nth-child(15):hover::before {
+    content: 'Artha Wiguna';
+}
+
+main .sect_7 .exec:nth-child(16) {
+    background-image: url('../images/executives/Ayu_r2.webp');
+}
+main .sect_7 .exec:nth-child(16):hover::before {
+    content: 'Ayu Laksmita';
+}
+
+main .sect_7 .exec:nth-child(17) {
+    background-image: url('../images/executives/Haqi_r2.webp');
+}
+main .sect_7 .exec:nth-child(17):hover::before {
+    content: 'Bening Kumala Haqi';
+}
+
+main .sect_7 .exec:nth-child(18) {
+    background-image: url('../images/executives/Ben_r2.webp');
+}
+main .sect_7 .exec:nth-child(18):hover::before {
+    content: 'Benoit Morana';
+}
+
+
+
+
+main .sect_7 .exec:nth-child(19) {
+    background-image: url('../images/executives/Bob_r3.webp');
+}
+main .sect_7 .exec:nth-child(19):hover::before {
+    content: 'Bob Haring';
+}
+
+main .sect_7 .exec:nth-child(20) {
+    background-image: url('../images/executives/bridget_r3.webp');
+}
+main .sect_7 .exec:nth-child(20):hover::before {
+    content: 'Bridget Van Soest';
+}
+
+main .sect_7 .exec:nth-child(21) {
+    background-image: url('../images/executives/Caroline_r3.webp');
+}
+main .sect_7 .exec:nth-child(21):hover::before {
+    content: 'Carolyn Battin';
+}
+
+
+main .sect_7 .exec:nth-child(22) {
+    background-image: url('../images/executives/Chey_r3.webp');
+}
+main .sect_7 .exec:nth-child(22):hover::before {
+    content: 'Chey Mose';
+}
+
+
+main .sect_7 .exec:nth-child(23) {
+    background-image: url('../images/executives/Chris_r3.webp');
+}
+main .sect_7 .exec:nth-child(23):hover::before {
+    content: 'Chris Coppin';
+}
+
+
+main .sect_7 .exec:nth-child(24) {
+    background-image: url('../images/executives/claire_r3.webp');
+}
+main .sect_7 .exec:nth-child(24):hover::before {
+    content: 'Claire Dunton';
+}
+
+main .sect_7 .exec:nth-child(25) {
+    background-image: url('../images/executives/Dani_r3.webp');
+}
+main .sect_7 .exec:nth-child(25):hover::before {
+    content: 'Daniella Logan';
+}
+
+
+main .sect_7 .exec:nth-child(26) {
+    background-image: url('../images/executives/Danielle_r3.webp');
+}
+main .sect_7 .exec:nth-child(26):hover::before {
+    content: 'Danielle Ryder';
+}
+
+
+main .sect_7 .exec:nth-child(27) {
+    background-image: url('../images/executives/Daud_r3.webp');
+}
+main .sect_7 .exec:nth-child(27):hover::before {
+    content: 'Daud Christian';
+}
+
+
+
+
+
+main .sect_7 .exec:nth-child(28) {
+    background-image: url('../images/executives/Dean_r4.webp');
+}
+main .sect_7 .exec:nth-child(28):hover::before {
+    content: 'Dean Berlingeri';
+}
+
+main .sect_7 .exec:nth-child(29) {
+    background-image: url('../images/executives/Marnie_r4.webp');
+}
+main .sect_7 .exec:nth-child(29):hover::before {
+    content: 'Dr Marnie Crook';
+}
+
+main .sect_7 .exec:nth-child(30) {
+    background-image: url('../images/executives/Drew_r4.webp');
+}
+main .sect_7 .exec:nth-child(30):hover::before {
+    content: 'Drew Foster';
+}
+
+main .sect_7 .exec:nth-child(31) {
+    background-image: url('../images/executives/Eki_r4.webp');
+}
+main .sect_7 .exec:nth-child(31):hover::before {
+    content: 'Eki Fauzi Firdaus';
+}
+
+main .sect_7 .exec:nth-child(32) {
+    background-image: url('../images/executives/Emma_r4.webp');
+}
+main .sect_7 .exec:nth-child(32):hover::before {
+    content: 'Emma Andrews';
+}
+
+main .sect_7 .exec:nth-child(33) {
+    background-image: url('../images/executives/Emmanuel_r4.webp');
+}
+main .sect_7 .exec:nth-child(33):hover::before {
+    content: 'Emmanuel Tissera';
+}
+
+main .sect_7 .exec:nth-child(34) {
+    background-image: url('../images/executives/Em_Stew_r4.webp');
+}
+main .sect_7 .exec:nth-child(34):hover::before {
+    content: 'Em Stewart';
+}
+
+main .sect_7 .exec:nth-child(35) {
+    background-image: url('../images/executives/Erian_r4.webp');
+}
+main .sect_7 .exec:nth-child(35):hover::before {
+    content: 'Erian Suwandi';
+}
+
+main .sect_7 .exec:nth-child(36) {
+    background-image: url('../images/executives/Fab_r4.webp');
+}
+main .sect_7 .exec:nth-child(36):hover::before {
+    content: 'Fab Ferrante';
+}
+
+
+
+
+
+main .sect_7 .exec:nth-child(37) {
+    background-image: url('../images/executives/Filya_r5.webp');
+}
+main .sect_7 .exec:nth-child(37):hover::before {
+    content: 'Filya Mustikawati';
+}
+
+main .sect_7 .exec:nth-child(38) {
+    background-image: url('../images/executives/Rahman_r5.webp');
+}
+main .sect_7 .exec:nth-child(38):hover::before {
+    content: 'Fithratur Rahman';
+}
+
+main .sect_7 .exec:nth-child(39) {
+    background-image: url('../images/executives/Gabi_r5.webp');
+}
+main .sect_7 .exec:nth-child(39):hover::before {
+    content: 'Gaby Christie';
+}
+
+main .sect_7 .exec:nth-child(40) {
+    background-image: url('../images/executives/Gemma_r5.webp');
+}
+main .sect_7 .exec:nth-child(40):hover::before {
+    content: 'Gemma Hinds';
+}
+
+main .sect_7 .exec:nth-child(41) {
+    background-image: url('../images/executives/Grace_r5.webp');
+}
+main .sect_7 .exec:nth-child(41):hover::before {
+    content: 'Grace Purton-Long';
+}
+
+main .sect_7 .exec:nth-child(42) {
+    background-image: url('../images/executives/Hadi_r5.webp');
+}
+main .sect_7 .exec:nth-child(42):hover::before {
+    content: 'Hadi Wijaya';
+}
+
+main .sect_7 .exec:nth-child(43) {
+    background-image: url('../images/executives/Hesty_r5.webp');
+}
+main .sect_7 .exec:nth-child(43):hover::before {
+    content: 'Hesty Noviana';
+}
+
+main .sect_7 .exec:nth-child(44) {
+    background-image: url('../images/executives/Iqbal_r5.webp');
+}
+main .sect_7 .exec:nth-child(44):hover::before {
+    content: 'Iqbal Tawakkul';
+}
+
+main .sect_7 .exec:nth-child(45) {
+    background-image: url('../images/executives/Jaka_r5.webp');
+}
+main .sect_7 .exec:nth-child(45):hover::before {
+    content: 'Jaka Sardjono';
+}
+
+
+
+
+
+main .sect_7 .exec:nth-child(46) {
+    background-image: url('../images/executives/Jase_r6.webp');
+}
+main .sect_7 .exec:nth-child(46):hover::before {
+    content: 'Jase Watson';
+}
+
+main .sect_7 .exec:nth-child(47) {
+    background-image: url('../images/executives/Jessica_r6.webp');
+}
+main .sect_7 .exec:nth-child(47):hover::before {
+    content: 'Jessica Djauhari';
+}
+
+main .sect_7 .exec:nth-child(48) {
+    background-image: url('../images/executives/JessGoode_r6.webp');
+}
+main .sect_7 .exec:nth-child(48):hover::before {
+    content: 'Jessica Goode';
+}
+
+main .sect_7 .exec:nth-child(49) {
+    background-image: url('../images/executives/Jo_r6.webp');
+}
+main .sect_7 .exec:nth-child(49):hover::before {
+    content: 'Johannes Untoro';
+}
+
+main .sect_7 .exec:nth-child(50) {
+    background-image: url('../images/executives/Josh_r6.webp');
+}
+main .sect_7 .exec:nth-child(50):hover::before {
+    content: 'Josh Smith';
+}
+
+main .sect_7 .exec:nth-child(51) {
+    background-image: url('../images/executives/Kelvin_r6.webp');
+}
+main .sect_7 .exec:nth-child(51):hover::before {
+    content: 'Kelvin Lin';
+}
+
+main .sect_7 .exec:nth-child(52) {
+    background-image: url('../images/executives/Leah_r6.webp');
+}
+main .sect_7 .exec:nth-child(52):hover::before {
+    content: 'Leah Champion';
+}
+
+main .sect_7 .exec:nth-child(53) {
+    background-image: url('../images/executives/Liam_r6.webp');
+}
+main .sect_7 .exec:nth-child(53):hover::before {
+    content: 'Liam Thomas';
+}
+
+main .sect_7 .exec:nth-child(54) {
+    background-image: url('../images/executives/Lisa_r6.webp');
+}
+main .sect_7 .exec:nth-child(54):hover::before {
+    content: 'Lisa Hough';
+}
+
+
+
+
+
+main .sect_7 .exec:nth-child(55) {
+    background-image: url('../images/executives/Liza_r7.webp');
+}
+main .sect_7 .exec:nth-child(55):hover::before {
+    content: 'Liza GErreyn';
+}
+
+main .sect_7 .exec:nth-child(56) {
+    background-image: url('../images/executives/Marcus_r7.webp');
+}
+main .sect_7 .exec:nth-child(56):hover::before {
+    content: 'Marcus Emmanuel';
+}
+
+main .sect_7 .exec:nth-child(57) {
+    background-image: url('../images/executives/Mario_r7.webp');
+}
+main .sect_7 .exec:nth-child(57):hover::before {
+    content: 'Mario Lopez';
+}
+
+main .sect_7 .exec:nth-child(58) {
+    background-image: url('../images/executives/MarkMac_r7.webp');
+}
+main .sect_7 .exec:nth-child(58):hover::before {
+    content: 'Mark MacSmith';
+}
+
+main .sect_7 .exec:nth-child(59) {
+    background-image: url('../images/executives/MarkP_r7.webp');
+}
+main .sect_7 .exec:nth-child(59):hover::before {
+    content: 'Mark Price';
+}
+
+main .sect_7 .exec:nth-child(60) {
+    background-image: url('../images/executives/Martina_r7.webp');
+}
+main .sect_7 .exec:nth-child(60):hover::before {
+    content: 'Martina Ricci';
+}
+
+main .sect_7 .exec:nth-child(61) {
+    background-image: url('../images/executives/Marty_r7.webp');
+}
+main .sect_7 .exec:nth-child(61):hover::before {
+    content: 'Marty Drill';
+}
+
+main .sect_7 .exec:nth-child(62) {
+    background-image: url('../images/executives/Matthew_r7.webp');
+}
+main .sect_7 .exec:nth-child(62):hover::before {
+    content: 'Matthew Dalla Rosa';
+}
+
+main .sect_7 .exec:nth-child(63) {
+    background-image: url('../images/executives/Matt_r7.webp');
+}
+main .sect_7 .exec:nth-child(64):hover::before {
+    content: 'Metthew Stobo';
+}
+
+
+
+
+
+main .sect_7 .exec:nth-child(64) {
+    background-image: url('../images/executives/Nadia_r8.webp');
+}
+main .sect_7 .exec:nth-child(64):hover::before {
+    content: 'Nadia Mayangputri';
+}
+
+
+main .sect_7 .exec:nth-child(65) {
+    background-image: url('../images/executives/Knott_r8.webp');
+}
+main .sect_7 .exec:nth-child(65):hover::before {
+    content: 'Nattawut Comlon';
+}
+
+main .sect_7 .exec:nth-child(66) {
+    background-image: url('../images/executives/Renu_r8.webp');
+}
+main .sect_7 .exec:nth-child(66):hover::before {
+    content: 'Renu Gudlawar';
+}
+
+main .sect_7 .exec:nth-child(67) {
+    background-image: url('../images/executives/Sarah_r8.webp');
+}
+main .sect_7 .exec:nth-child(67):hover::before {
+    content: 'Sarah Crooke';
+}
+
+main .sect_7 .exec:nth-child(68) {
+    background-image: url('../images/executives/SarahD_r8.webp');
+}
+main .sect_7 .exec:nth-child(68):hover::before {
+    content: 'Sarah Dam';
+}
+
+main .sect_7 .exec:nth-child(69) {
+    background-image: url('../images/executives/Shanti_r8.webp');
+}
+main .sect_7 .exec:nth-child(69):hover::before {
+    content: 'Shanti Lestari';
+}
+
+main .sect_7 .exec:nth-child(70) {
+    background-image: url('../images/executives/Shayna_r8.webp');
+}
+main .sect_7 .exec:nth-child(70):hover::before {
+    content: 'Shayna Burns';
+}
+
+main .sect_7 .exec:nth-child(71) {
+    background-image: url('../images/executives/Tami_r8.webp');
+}
+main .sect_7 .exec:nth-child(71):hover::before {
+    content: 'Tami Iseli';
+}
+
+main .sect_7 .exec:nth-child(72) {
+    background-image: url('../images/executives/Thom_r8.webp');
+}
+main .sect_7 .exec:nth-child(72):hover::before {
+    content: 'Thom Bransom';
+}
+
+
+
+
+
+main .sect_7 .exec:nth-child(73) {
+    background-image: url('../images/executives/Tony_r9.webp');
+}
+main .sect_7 .exec:nth-child(73):hover::before {
+    content: 'Tony Duan';
+}
+
+main .sect_7 .exec:nth-child(74) {
+    background-image: url('../images/executives/Tristan_r9.webp');
+}
+main .sect_7 .exec:nth-child(74):hover::before {
+    content: 'Tristan Jones';
+}
+
+main .sect_7 .exec:nth-child(75) {
+    background-image: url('../images/executives/Victoria_r9.webp');
+}
+main .sect_7 .exec:nth-child(75):hover::before {
+    content: 'Victoria Whattmore';
+}
+
+main .sect_7 .exec:nth-child(76) {
+    background-image: url('../images/executives/Wahyu_r9.webp');
+}
+main .sect_7 .exec:nth-child(76):hover::before {
+    content: 'Wahyu Anggara';
+}
+
+main .sect_7 .exec:nth-child(77) {
+    background-image: url('../images/executives/Wicahya_r9.webp');
+}
+main .sect_7 .exec:nth-child(77):hover::before {
+    content: 'Wicahya Bagus';
+}
+
+main .sect_7 .exec:nth-child(78) {
+    background-image: url('../images/executives/Ynze_r9.webp');
+}
+main .sect_7 .exec:nth-child(78):hover::before {
+    content: 'Ynze Nunnink';
+}
+
+main .sect_7 .exec:nth-child(79) {
+    background-image: url('../images/executives/Yogie_r9.webp');
+}
+main .sect_7 .exec:nth-child(79):hover::before {
+    content: 'Yogie Sanjaya';
+}
+
+main .sect_7 .exec:nth-child(80) {
+    background-image: url('../images/executives/Yunata_r9.webp');
+}
+main .sect_7 .exec:nth-child(80):hover::before {
+    content: 'Yunata Pratiwi';
+}
+
+main .sect_7 .exec:nth-child(81) {
+    background: #fff;
+}
+
+
+
+main .sect_8 {
+    color: black;
+    width: 100%;
+    padding-top: 90px;
+    width: 100%;
+    height: 300vh;
+}
+
+main .sect_8 .clients {
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+main .sect_8 .clients img {
+    width: 198.3px;
+}
+
+main .sect_8 .container {
+    margin-top: 120px;
+}
+
+main .sect_9 {
+    width: 100%;
+    height: 120vh;
+    background-image: url(../images/about_BCorp.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+main .sect_9 .text {
+    position: relative;
+    height: 330px;
+    width: 55%;
+    top: 350px;
+    left: 45%;
+    color: white;
+    display: block;
+}
+
+
+main .sect_10 {
+    height: 230vh;
+    width: 100%;
+    background-color: white;
+    display: block;
+    padding-top: 90px;
+    color: black;
+}
+
+main .sect_10 article {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+main .sect_10 article .ptwo {
+    text-align: left;
+    opacity: 0.7;
+    /* font-size: 27px; */
+}
+
+main .sect_10 .maps {
+    width: 100%;
+    height: 905px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+}
+
+main .sect_10 .maps .item {
+    height: 440px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: 1px 8px 10px rgba(128, 128, 128, 0.381);
+}
+
+main .sect_10 .maps .item .image {
+    height: 240px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+main .sect_10 .maps .item .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+main .sect_10 .maps .item article {
+    margin: 30px 27px;
+    text-align: left;
+    opacity: 0.7;
+}
+
+main .sect_10 .maps .item article h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+main .sect_10 .maps .item article p {
+    margin-bottom: 20px;
+}
+
+main .sect_10 .maps .item article p a {
+    color: black;
+    text-decoration: none;
+}
+
+main .sect_10 .maps .item article p a:hover {
+    text-decoration: 2px underline;
+}
+
+main .sect_10 .maps .item article p .tel {
+    color: #673FF0;
+}
+
